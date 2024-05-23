@@ -91,7 +91,8 @@
     align-items: center;
     cursor: pointer;
 }
-.signup_fb_button:hover{
+
+.signup_fb_button:hover {
     border-color: #00CCCB;
 }
 
@@ -115,17 +116,19 @@
     font-weight: 500;
 }
 
-.sign_uo_forget>p:hover, .sign_up_form_3 p:hover {
+.sign_uo_forget>p:hover,
+.sign_up_form_3 p span:hover {
     color: #56548C;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 1px;
 }
 
-.resent_big_font{
+.resent_big_font {
     font-size: 45px !important;
     line-height: 40px !important;
 }
+
 .sign_uo_forget>button {
     width: 180px;
     padding: 15px;
@@ -137,16 +140,12 @@
     cursor: pointer;
 }
 
-.bottem {
-    position: absolute;
-    bottom: 3%;
-    right: 25%;
-    text-align: start;
-    width: 500px;
-    font-size: 13px;
+.bottam {
+    font-size: 13PX;
+    margin-top: 23vh;
 }
 
-.bottem span {
+.bottam span {
     color: #F77EB9;
 }
 
@@ -160,7 +159,7 @@
     cursor: pointer;
 }
 
-.new_user_p:hover {
+.new_user_p span:hover {
     color: #00CCCB;
     font-size: 16px;
 }
@@ -168,7 +167,7 @@
 .sign_up_form_2 {
     width: 40vw;
     background-color: #FBFCFC;
-    height: 90vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     margin: 5vh 0;
@@ -183,6 +182,10 @@
     margin: 15px 0;
 }
 
+.signup_page_right_01 {
+    width: 32vw;
+}
+
 .sign_up_form_2>p {
     font-size: 16px;
     letter-spacing: 0lvw;
@@ -193,7 +196,6 @@
 
 .signup_2_fields_line {
     display: flex;
-    /* justify-content: space-between; */
     gap: 10px;
 }
 
@@ -259,4 +261,37 @@
     font-weight: 300 !important;
     margin-bottom: 20px;
     padding-top: 4px;
+}
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1450px) {
+    .sign_up_form_2 {
+        margin: 2vh 0;
+    }
+
+    .sign_up_form_2 button,
+    .sign_up_form_3 button {
+        margin: 0px 0;
+    }
+}
+
+@media screen and (min-device-width: 376px) and (max-device-width: 480px) {
+    .signup_page_left {
+        display: none;
+    }
+
+    .signup_page_right {
+        padding: 50px;
+    }
+
+    .bottam {
+        margin-top: 35vh;
+    }
+
+    .signup_page_right_01>h3 {
+        margin-top: 22vh;
+    }
+
+    .signup_page_right_01 {
+        width: 95vw;
+    }
 }
