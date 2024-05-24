@@ -271,9 +271,21 @@
     margin-bottom: 20px;
     padding-top: 4px;
 }
-
+.or_hr{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+.or_hr p {
+    font-size: 18px;
+    color: #84818A;
+    font-weight: 500;
+}
 .or_hr_line {
-    color: #dcdbdd;
+    border: 1px solid #dcdbdd;
+    width: 50%;
+    height: .1px;
 }
 
 @media screen and (min-device-width: 1601px) {

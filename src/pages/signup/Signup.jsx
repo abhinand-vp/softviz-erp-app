@@ -149,12 +149,12 @@ const Signup = () => {
                   <img src="/image/ic_fb logo.png" alt="" />
                 </div>
               </div>
-              <hr className="or_hr_line" />
-              {/* <div className="or_hr">
+              {/* <hr className="or_hr_line" /> */}
+              <div className="or_hr">
                             <hr className="or_hr_line" />
                             <p>or</p>
                             <hr className="or_hr_line" />
-                        </div> */}
+                        </div>
               <form key={1} onSubmit={handleSubmit(onSubmit)}>
                 <div className="signup_inputboxes">
                   <TextField
