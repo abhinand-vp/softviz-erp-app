@@ -144,7 +144,7 @@
 
 .bottam {
   font-size: 13px;
-  margin-top: 23vh;
+  margin-top: 10vh;
 }
 
 .bottam span {
@@ -275,6 +275,42 @@
   color: #dcdbdd;
 }
 
+@media screen and (min-device-width: 1601px){
+  *{
+    background-color: pink;
+  }
+  .signup_page_right_01 {
+    width: 27vw;
+  }
+  .signup_page_right_01 > h3 {
+    margin-top: 30vh;
+  }
+  .sign_up_form_2 {
+    margin: 2vh 0;
+  }
+
+  .sign_up_form_2 button,
+  .sign_up_form_3 button {
+    margin: 0px 0;
+  }
+}
+@media screen and (min-device-width: 1451px) and (max-device-width: 1600px) {
+  .signup_page_right_01 {
+    width: 28vw;
+  }
+  .signup_page_right_01 > h3 {
+    margin-top: 30vh;
+  }
+  .sign_up_form_2 {
+    margin: 2vh 0;
+  }
+
+  .sign_up_form_2 button,
+  .sign_up_form_3 button {
+    margin: 0px 0;
+  }
+}
+
 @media screen and (min-device-width: 1201px) and (max-device-width: 1450px) {
   .sign_up_form_2 {
     margin: 2vh 0;
@@ -303,16 +339,16 @@
     } */
 
   .signup_page_right_01 > h3 {
-    margin-top: 22vh;
+    margin-top: 19vh;
   }
 
   .signup_page_right_01 {
     width: 95vw;
   }
-    .sign_up_form_3{
+  .sign_up_form_3 {
     margin-top: 20vh;
   }
-    .agreement{
+  .agreement {
     font-size: 14px;
   }
 }
@@ -333,7 +369,7 @@
     } */
 
   .signup_page_right_01 > h3 {
-    margin-top: 22vh;
+    margin-top: 18vh;
   }
 
   .signup_page_right_01 {
@@ -342,10 +378,10 @@
   .sign_up_form_3 p {
     font-size: 13px;
   }
-  .sign_up_form_3{
+  .sign_up_form_3 {
     margin-top: 20vh;
   }
-  .agreement{
+  .agreement {
     font-size: 12px;
   }
 }
