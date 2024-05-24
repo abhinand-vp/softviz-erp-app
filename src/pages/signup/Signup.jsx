@@ -149,7 +149,12 @@ const Signup = () => {
                                 <img src="/image/ic_fb logo.png" alt="" />
                             </div>
                         </div>
-                        <hr />
+                        <hr className="or_hr_line" />
+                        {/* <div className="or_hr">
+                            <hr className="or_hr_line" />
+                            <p>or</p>
+                            <hr className="or_hr_line" />
+                        </div> */}
                         <form key={1} onSubmit={handleSubmit(onSubmit)}>
                             <div className="signup_inputboxes">
                                 <TextField
@@ -176,7 +181,7 @@ const Signup = () => {
                         </form>
                         <p className="bottam">
                             Protected by reCAPTCHA and subject to the{" "}
-                            <span> SoftViz Privacy Policy</span> and{" "} 
+                            <span> SoftViz Privacy Policy</span> and{" "}
                             <span>Terms of Service.</span>
                         </p>
                         <p onClick={() => setforms(2)} className="new_user_p">
@@ -187,8 +192,8 @@ const Signup = () => {
                 {forms == 2 && (
                     <div className="sign_up_form_2">
                         <h3>Sign up now to start your free trial.</h3>
-                        <p onClick={() => setforms(1)}>
-                            Already Have Account? &nbsp; sign in
+                        <p>
+                            Already Have Account? &nbsp; <span onClick={() => setforms(1)}>sign in</span>
                         </p>
                         <div>
                             <form key={2} onSubmit={handleSubmit1(onSubmit1)}>

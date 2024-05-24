@@ -24,7 +24,7 @@
 
 .signup_page_left h3 {
     color: #56548C;
-    font-weight: 200 !important;
+    font-weight: 300 !important;
     font-size: 32px;
     margin-bottom: 30px;
     line-height: 40px;
@@ -54,7 +54,7 @@
 
 .signup_page_right_01>h3 {
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 500;
     color: #202020;
     margin-top: 15vh;
 }
@@ -178,7 +178,7 @@
 .sign_up_form_2 h3 {
     font-size: 23px;
     letter-spacing: 0lvw;
-    font-weight: 200;
+    font-weight: 400;
     margin: 15px 0;
 }
 
@@ -189,8 +189,14 @@
 .sign_up_form_2>p {
     font-size: 16px;
     letter-spacing: 0lvw;
-    font-weight: 200;
+    font-weight: 400;
     margin: 15px 0;
+}
+
+.sign_up_form_2>p span:hover {
+    color: #56548C;
+    font-size: 17px;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -261,6 +267,10 @@
     font-weight: 300 !important;
     margin-bottom: 20px;
     padding-top: 4px;
+}
+
+.or_hr_line {
+    color: #DCDBDD;
 }
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1450px) {
