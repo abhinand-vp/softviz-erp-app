@@ -1,307 +1,351 @@
 .signup_page {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .signup_page_left {
-    background-color: #F4F9FF;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #f4f9ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.signup_page_left>div {
-    text-align: center;
+.signup_page_left > div {
+  text-align: center;
 }
 
 .signup_page_left h4 {
-    color: #56548C;
-    font-weight: 500;
-    font-size: 35px;
-    margin-bottom: 20px;
+  color: #56548c;
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 
 .signup_page_left h3 {
-    color: #56548C;
-    font-weight: 300 !important;
-    font-size: 32px;
-    margin-bottom: 30px;
-    line-height: 40px;
+  color: #56548c;
+  font-weight: 300 !important;
+  font-size: 32px;
+  margin-bottom: 30px;
+  line-height: 40px;
 }
 
-.signup_page_left h3>span,
-.signup_page_left P>span {
-    font-weight: 700 !important;
+.signup_page_left h3 > span,
+.signup_page_left P > span {
+  font-weight: 700 !important;
 }
 
-.signup_page_left P>span {
-    color: #00CCCB;
+.signup_page_left P > span {
+  color: #00cccb;
 }
 
 .signup_page_left P {
-    color: #56548C;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 28px;
+  color: #56548c;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .signup_page_right {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-.signup_page_right_01>h3 {
-    font-size: 28px;
-    font-weight: 500;
-    color: #202020;
-    margin-top: 15vh;
+.signup_page_right_01 > h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #202020;
+  margin-top: 15vh;
 }
 
 .signup_google_facebook {
-    margin: 25px 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.signup_google_facebook>button {
-    width: 320px;
-    padding: 12px 20px;
-    background-color: #56548C;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-    color: #FFF;
-    cursor: pointer;
+.signup_google_facebook > button {
+  width: 320px;
+  padding: 12px 15px;
+  background-color: #56548c;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.signup_google_facebook>button img {
-    margin-right: 50px;
+.signup_google_facebook > button img {
+  margin-right: 50px;
 }
 
 .signup_fb_button {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #DCDBDD;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #dcdbdd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .signup_fb_button:hover {
-    border-color: #00CCCB;
+  border-color: #00cccb;
 }
 
-.signup_fb_button>img {
-    width: 20px;
+.signup_fb_button > img {
+  width: 20px;
 }
 
 .signup_inputboxes {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .sign_uo_forget {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
-.sign_uo_forget>p {
-    cursor: pointer;
-    font-weight: 500;
+.sign_uo_forget > p {
+  cursor: pointer;
+  font-weight: 500;
 }
 
-.sign_uo_forget>p:hover,
+.sign_uo_forget > p:hover,
 .sign_up_form_3 p span:hover {
-    color: #56548C;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 1px;
+  color: #56548c;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .resent_big_font {
-    font-size: 45px !important;
-    line-height: 40px !important;
+  font-size: 45px !important;
+  line-height: 40px !important;
 }
 
-.sign_uo_forget>button {
-    width: 180px;
-    padding: 15px;
-    background-color: #00CCCB;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-    color: #FFF;
-    cursor: pointer;
+.sign_uo_forget > button {
+  width: 180px;
+  padding: 15px;
+  background-color: #00cccb;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .bottam {
-    font-size: 13PX;
-    margin-top: 23vh;
+  font-size: 13px;
+  margin-top: 23vh;
 }
 
 .bottam span {
-    color: #F77EB9;
+  color: #f77eb9;
 }
 
 .new_user_p {
-    position: absolute;
-    top: 3%;
-    right: 5%;
-    text-align: start;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  text-align: start;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .new_user_p span:hover {
-    color: #00CCCB;
-    font-size: 16px;
+  color: #00cccb;
+  font-size: 16px;
 }
 
 .sign_up_form_2 {
-    width: 40vw;
-    background-color: #FBFCFC;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 5vh 0;
-    border-radius: 15px;
-    padding: 10px 25px;
+  /* width: 40vw; */
+  background-color: #fbfcfc;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 0;
+  border-radius: 15px;
+  padding: 10px 25px;
 }
 
 .sign_up_form_2 h3 {
-    font-size: 23px;
-    letter-spacing: 0lvw;
-    font-weight: 400;
-    margin: 15px 0;
+  font-size: 23px;
+  letter-spacing: 0lvw;
+  font-weight: 400;
+  margin: 15px 0;
 }
 
 .signup_page_right_01 {
-    width: 32vw;
+  width: 32vw;
 }
 
-.sign_up_form_2>p {
-    font-size: 16px;
-    letter-spacing: 0lvw;
-    font-weight: 400;
-    margin: 15px 0;
+.sign_up_form_2 > p {
+  font-size: 16px;
+  letter-spacing: 0lvw;
+  font-weight: 400;
+  margin: 15px 0;
 }
 
-.sign_up_form_2>p span:hover {
-    color: #56548C;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
+.sign_up_form_2 > p span:hover {
+  color: #56548c;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .signup_2_fields_line {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
-.signup_2_fields_line>div {
-    width: 50%;
+.signup_2_fields_line > div {
+  width: 50%;
 }
 
 .sign_up_form_2 button,
 .sign_up_form_3 button {
-    margin: 20px 0;
-    width: 100%;
-    padding: 15px 0;
-    background-color: #00CCCB;
-    border-radius: 15px;
-    border: none;
-    color: #FFF;
-    font-size: 16px;
-    cursor: pointer;
+  margin: 20px 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #00cccb;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .masetr_sub {
-    color: #F77EB9;
+  color: #f77eb9;
 }
 
 .signup_footer_content {
-    font-size: 12px !important;
-    font-weight: 100;
-    color: #84818A;
+  font-size: 12px !important;
+  font-weight: 100;
+  color: #84818a;
 }
 
 .sign_up_form_3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sign_up_form_3 h4 {
-    font-size: 25px;
-    font-weight: 300;
-    margin: 20px 0;
-    color: #202020;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 20px 0;
+  color: #202020;
 }
 
 .sign_up_form_3 p {
-    font-size: 16px;
-    font-weight: 300;
-    margin: 15px 0;
-    color: #47464A;
-    line-height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 15px 0;
+  color: #47464a;
+  line-height: 27px;
 }
 
 .sign_up_form_3_bottom_signup {
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    padding-top: 50px;
-    font-weight: 500 !important;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 50px;
+  font-weight: 500 !important;
 }
 
 .error_message {
-    color: red !important;
-    font-size: 15px;
-    font-weight: 300 !important;
-    margin-bottom: 20px;
-    padding-top: 4px;
+  color: red !important;
+  font-size: 15px;
+  font-weight: 300 !important;
+  margin-bottom: 20px;
+  padding-top: 4px;
 }
 
 .or_hr_line {
-    color: #DCDBDD;
+  color: #dcdbdd;
 }
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1450px) {
-    .sign_up_form_2 {
-        margin: 2vh 0;
-    }
+  .sign_up_form_2 {
+    margin: 2vh 0;
+  }
 
-    .sign_up_form_2 button,
-    .sign_up_form_3 button {
-        margin: 0px 0;
-    }
+  .sign_up_form_2 button,
+  .sign_up_form_3 button {
+    margin: 0px 0;
+  }
 }
 
 @media screen and (min-device-width: 376px) and (max-device-width: 480px) {
-    .signup_page_left {
-        display: none;
-    }
+  .signup_page {
+    display: block;
+  }
+  .signup_page_left {
+    display: none;
+  }
 
-    .signup_page_right {
+  /* .signup_page_right {
         padding: 50px;
-    }
+    } */
 
-    .bottam {
+  /* .bottam {
         margin-top: 35vh;
-    }
+    } */
 
-    .signup_page_right_01>h3 {
-        margin-top: 22vh;
-    }
+  .signup_page_right_01 > h3 {
+    margin-top: 22vh;
+  }
 
-    .signup_page_right_01 {
-        width: 95vw;
-    }
+  .signup_page_right_01 {
+    width: 95vw;
+  }
+    .sign_up_form_3{
+    margin-top: 20vh;
+  }
+    .agreement{
+    font-size: 14px;
+  }
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 375px) {
+  .signup_page {
+    display: block;
+  }
+  .signup_page_left {
+    display: none;
+  }
+
+  /* .signup_page_right {
+        padding: 50px;
+    } */
+
+  /* .bottam {
+        margin-top: 35vh;
+    } */
+
+  .signup_page_right_01 > h3 {
+    margin-top: 22vh;
+  }
+
+  .signup_page_right_01 {
+    width: 95vw;
+  }
+  .sign_up_form_3 p {
+    font-size: 13px;
+  }
+  .sign_up_form_3{
+    margin-top: 20vh;
+  }
+  .agreement{
+    font-size: 12px;
+  }
 }

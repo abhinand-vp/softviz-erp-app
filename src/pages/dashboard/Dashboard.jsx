@@ -1,31 +1,20 @@
-import './dashboard.css';
+import Dashboard_Center from "./Dashboard_Center";
+import Dashboard_Left from "./Dashboard_Left";
+import Dashboard_Top from "./Dashboard_Top";
+import "./dashboard.css";
 
 const Dashboard = () => {
-    return (
-        <div className="dashboard_page">
-            <div className="dashboard_page_left">
-                <div className='dashboard_page_left_profile'>
-                    <img src="/image/avatar-41.png" alt="" />
-                    <h3>Vishnu Raj</h3>
-                    <p>vinesh@alphatechind.com</p>
-                    <button>View Profile</button>
-                </div>
-            </div>
-            <div className="dashboard_page_right">
-                <div className='dashboard_page_right_navbar'>
-                    <div>
-                    <h3>Dashboard</h3>
-                    </div>
-                    <div>
-                        <img src="/image/Do not Disturb iOS.png" alt="" />
-                        <img src="/image/Fast Cart.png" alt="" />
-                        <img src="/image/Language.png" alt="" />
-                        <input type="Search" name="" id="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="dashboard_page">
+      <Dashboard_Left />
+      <div className="dashboard_page_right">
+        <Dashboard_Top />
+      <div>
+        <Dashboard_Center />
+      </div>
+      </div>
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
