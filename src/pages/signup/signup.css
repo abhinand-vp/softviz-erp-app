@@ -167,12 +167,11 @@
 }
 
 .sign_up_form_2 {
-    /* width: 40vw; */
     background-color: #fbfcfc;
-    height: auto;
+    height: auto !important;
     justify-content: center;
     align-items: center;
-    margin: 5vh 0;
+    margin: 4vh 0;
     border-radius: 15px;
     padding: 10px 25px;
 }
@@ -180,7 +179,7 @@
 .sign_up_form_2 h3 {
     font-size: 23px;
     letter-spacing: 0lvw;
-    font-weight: 400;
+    font-weight: 500;
     margin: 15px 0;
 }
 
@@ -229,20 +228,22 @@
 }
 
 .signup_footer_content {
-    font-size: 12px !important;
+    font-size: 13px !important;
     font-weight: 100;
     color: #84818a;
+    margin-top: 20px;
 }
 
 .sign_up_form_3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 28vw;
 }
 
 .sign_up_form_3 h4 {
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 500;
     margin: 20px 0;
     color: #202020;
 }
@@ -276,9 +277,6 @@
 }
 
 @media screen and (min-device-width: 1601px) {
-    * {
-        background-color: pink;
-    }
 
     .signup_page_right_01 {
         width: 27vw;
@@ -289,12 +287,15 @@
     }
 
     .sign_up_form_2 {
-        margin: 2vh 0;
+        margin: 8vh 0;
     }
 
     .sign_up_form_2 button,
     .sign_up_form_3 button {
         margin: 0px 0;
+    }
+    .sign_up_form_3 {
+        width: 26vw;
     }
 }
 
@@ -308,12 +309,12 @@
     }
 
     .sign_up_form_2 {
-        margin: 2vh 0;
+        margin: 5vh 0;
     }
 
     .sign_up_form_2 button,
     .sign_up_form_3 button {
-        margin: 0px 0;
+        margin: 25px 0;
     }
 }
 
@@ -382,14 +383,35 @@
     .signup_page_right_01 {
         width: 60vw;
     }
+
     .signup_page_right_01>h3 {
-    margin-top: 12vh;
+        margin-top: 12vh;
     }
 }
 
 @media screen and (min-device-width: 376px) and (max-device-width: 480px) {
     .signup_page {
         display: block;
+    }
+
+    .signup_google_facebook>button {
+        width: 250px;
+        padding: 1px 13px;
+        font-size: 17px;
+    }
+
+    .sign_uo_forget>button {
+        width: 160px;
+        padding: 11px;
+        font-size: 17px;
+    }
+
+    .bottam {
+        margin-top: 5vh;
+    }
+
+    .signup_google_facebook>button img {
+        margin-right: 30px;
     }
 
     .signup_page_left {
@@ -428,7 +450,7 @@
     }
 
     .agreement {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .sign_up_form_2 {
@@ -446,11 +468,43 @@
         letter-spacing: 1px;
     }
 
+    .signup_2_fields_line {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .signup_2_fields_line>div {
+        width: 100%;
+    }
+
+    .signup_footer_content {
+        margin: 10px 12px;
+    }
 }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 375px) {
     .signup_page {
         display: block;
+    }
+
+    .signup_google_facebook>button {
+        width: 240px;
+        padding: 1px 13px;
+        font-size: 17px;
+    }
+
+    .sign_uo_forget>button {
+        width: 160px;
+        padding: 11px;
+        font-size: 17px;
+    }
+
+    .bottam {
+        margin-top: 5vh;
+    }
+
+    .signup_google_facebook>button img {
+        margin-right: 30px;
     }
 
     .signup_page_left {
@@ -469,7 +523,7 @@
     }
 
     .signup_page_left P {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 20px;
     }
 
@@ -493,6 +547,23 @@
     }
 
     .agreement {
-        font-size: 14px;
+        font-size: 12.5px;
+    }
+
+    .sign_up_form_2 h3 {
+        font-size: 20px;
+    }
+
+    .signup_2_fields_line {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .signup_2_fields_line>div {
+        width: 100%;
+    }
+
+    .signup_footer_content {
+        margin: 10px 12px;
     }
 }

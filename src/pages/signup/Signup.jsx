@@ -331,7 +331,7 @@ const Signup = () => {
               <h4>Forget Password</h4>
               <p>
                 No worriest! Just enter your email and we’ll send you a reset{" "}
-                <br /> password link.
+                 password link.
               </p>
               <form key={3} onSubmit={handleSubmit2(onSubmit2)}>
                 <TextField
