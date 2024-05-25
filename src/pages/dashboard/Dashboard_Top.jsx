@@ -3,7 +3,9 @@ function Dashboard_Top() {
   return (
     <>
       <div className="dashboard_page_right_top">
-
+        <div className="nav_icon">
+          <img src="icons/nav_icon.svg" alt="" />
+        </div>
         <div>
           <h3>Dashboard</h3>
         </div>

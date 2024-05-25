@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
 
-function Dashboard_Left() {
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+function Dashboard_Left({ navigate }) {
+  const navigateLogout = useNavigate()
   const [activeNavItem, setActiveNavItem] = useState("");
   const [dashboardOneVisible, setDashboardOneVisible] = useState(false);
   const [dashboardTwoVisible, setDashboardTwoVisible] = useState(false);
@@ -48,7 +51,9 @@ function Dashboard_Left() {
             >
               {dashboardOneVisible && (
                 <ul className="dashboard_dropdown_ul">
-                  <li>Subscribed Apps</li>
+                  <li onClick={() => navigate("/dashboard/subscribedapps")}>
+                    Subscribed Apps
+                  </li>
                 </ul>
               )}
             </div>
@@ -72,13 +77,13 @@ function Dashboard_Left() {
             >
               {dashboardTwoVisible && (
                 <ul className="dashboard_dropdown_ul">
-                  <li>
+                  <li onClick={() => navigate("/dashboard/country")}>
                     <div className="nav_item_li_div">
                       <img src="/icons/earth_icon.svg" alt="" />
                       Country
                     </div>
                   </li>
-                  <li>
+                  <li onClick={() => navigate("/dashboard/state")}>
                     <div className="nav_item_li_div">
                       <img src="/icons/worldmap_icon.svg" alt="" />
                       State
@@ -126,10 +131,10 @@ function Dashboard_Left() {
             </li>
           </ul>
         </div>
-        <div className="logout_div">
-          
-        <img src="/icons/logout_icon.svg" alt="" />
-          Logout</div>
+        <div className="logout_div" onClick={() => navigateLogout("/")}>
+          <img src="/icons/logout_icon.svg" alt="" />
+          Logout
+        </div>
       </div>
     </>
   );
