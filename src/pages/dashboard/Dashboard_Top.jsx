@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 
-function Dashboard_Top() {
+
+function Dashboard_Top({ toogleNav }) {
   return (
     <>
       <div className="dashboard_page_right_top">
-        <div className="nav_icon">
-          <img src="icons/nav_icon.svg" alt="" />
+        <div className="nav_icon" onClick={toogleNav}>
+          <img src="/icons/nav_icon.svg" alt="" />
         </div>
         <div>
           <h3>Dashboard</h3>
@@ -20,4 +22,4 @@ function Dashboard_Top() {
   );
 }
 
-export default Dashboard_Top
+export default Dashboard_Top;
