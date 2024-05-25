@@ -4,10 +4,9 @@
 }
 
 .dashboard_page_left {
-  display: flex;
-  justify-content: center;
   background-color: #f4f9ff;
-  height: 100vh;
+  height: 140vh;
+  
 }
 
 .dashboard_page_left_profile {
@@ -18,17 +17,83 @@
   gap: 12px;
   align-items: center;
 }
+.avatar_circle {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #56548c;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.dashboard_page_left_profile img {
+.avatar_circle img {
   width: 130px;
 }
 
 .dashboard_page_left_profile button {
   padding: 15px 10px;
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: #56548c1a;
+  box-shadow: 0px 20px 100px 0px #5555550d;
+
   color: #56548c;
   border: none;
+}
+.nav {
+  margin-top: 50px;
+}
+.nav_item {
+  color: #8597a8;
+  font-size: 17px;
+  font-weight: 500;
+}
+.nav ul {
+  list-style-type: none;
+  user-select: none;
+}
+.nav_item_li {
+  padding: 10px 0 10px 30px;
+  cursor: pointer;
+}
+.nav_item_li:hover {
+  color: #56548c;
+}
+.nav_item .active {
+  border-right: 5px solid #56548c;
+  border-radius: 5px;
+  color: #56548c;
+}
+.dashboard_dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.dashboard_dropdown.show {
+  max-height: 220px;
+}
+.dashboard_dropdown.hide {
+  max-height: 0;
+}
+.nav_item_li_div{
+  display: flex;
+  align-items: center;
+}
+.nav_item_li_div>img{
+  scale: .7;
+  margin-right: 8px;
+}
+.dashboard_dropdown_ul > li {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0 5px 60px;
+
+}
+
+.dashboard_dropdown_ul > li:hover {
+  color: #56548c;
 }
 
 .dashboard_page_right_top {
@@ -47,4 +112,20 @@
   background-color: #55555514;
   border: none;
   height: 35px !important;
+}
+.logout_div {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  color:#D36363;
+  font-weight: 500;
+  cursor: pointer;
+}
+.logout_div:hover{
+  font-weight: 700;
+}
+.logout_div>img{
+    scale: .7;
+  margin-right: 8px;
 }
