@@ -1,11 +1,8 @@
-function Country() {
+import React from 'react'
+
+const Country = () => {
   return (
-      <>
-          
-          <div>
-              <h1>Country</h1>
-      </div>
-    </>
+    <div>Country</div>
   )
 }
 
