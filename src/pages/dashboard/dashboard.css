@@ -334,6 +334,41 @@
   color: #32383f;
 }
 
+.country_table {
+  background-color: #DDDFE1;
+  width: 90%;
+  height: 500px;
+  padding: 15px;
+
+}
+
+.country_table h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.heading_border {
+  border: 1px solid gray;
+}
+
+table {
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #F4F9FF;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
 @media screen and (min-device-width: 1201px) and (max-device-width: 1450px) {
   .nav_icon {
     display: none !important;
@@ -402,6 +437,8 @@
 
   .unsubscribed_apps_crads {
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
   }
 
   .unsubscribed_apps_crad {
@@ -426,13 +463,23 @@
   }
 
   .unsubscribed_apps_crad {
-    width: 100vw;
+    width: 85vw;
   }
+
   .dashboard_page_right_top {
     grid-template-columns: 1fr 1fr;
   }
-  .dashboard_page_right_top input{
-    margin: 20px 30px!important;
+
+  .dashboard_page_right_top input {
+    margin: 20px 30px !important;
+  }
+
+  .dashboard_center {
+    padding: 2vh 4vw !important;
+  }
+
+  .subscribed_apps h4 {
+    margin: 10px;
   }
 }
 
@@ -453,10 +500,19 @@
   }
 
   .unsubscribed_apps_crad {
-    width: 100vw;
+    width: 85vw;
   }
 
   .dashboard_page_right_top {
     grid-template-columns: 1fr 1fr;
   }
+
+  .dashboard_center {
+    padding: 2vh 4vw !important;
+  }
+
+  .subscribed_apps h4 {
+    margin: 10px;
+  }
+
 }
