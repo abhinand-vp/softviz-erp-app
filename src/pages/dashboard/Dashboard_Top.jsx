@@ -13,8 +13,10 @@ function Dashboard_Top({ toogleNav }) {
           <img src="/icons/halfmoon_icon.svg" alt="" />
           <img src="/icons/language_icon.svg" alt="" />
           <img src="/icons/cart_icon.svg" alt="" />
-          <input type="Search" className="search_icon" name="" id="" />
         </div>
+          <div className="search_box_mobile">
+            <input type="Search" className="search_icon" name="" id="" />
+          </div>
       </div>
     </>
   );

@@ -42,9 +42,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .dashboard_page_left_profile p {
   font-size: 14px;
 }
+
 .dashboard_page_left_profile h3 {
   font-size: 16px;
 }
@@ -63,6 +65,7 @@
   color: #56548c;
   border: none;
 }
+
 .dashboard_page_left_profile button:hover {
   background-color: #56548c;
   color: #ffffff;
@@ -108,6 +111,7 @@
   border-radius: 5px;
   color: #56548c;
 }
+
 .search_icon {
   padding-left: 25px;
   background: url("/icons/search.svg") no-repeat left;
@@ -177,19 +181,19 @@
   align-items: center;
 }
 
-.nav_item_li_div > img {
+.nav_item_li_div>img {
   scale: 0.7;
   margin-right: 8px;
 }
 
-.dashboard_dropdown_ul > li {
+.dashboard_dropdown_ul>li {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   padding: 5px 0 5px 60px;
 }
 
-.dashboard_dropdown_ul > li:hover {
+.dashboard_dropdown_ul>li:hover {
   color: #56548c;
 }
 
@@ -199,12 +203,12 @@
 }
 
 .dashboard_page_right_top {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 25px 35px 15px 0;
 }
 
-.dashboard_page_right_top > div {
+.dashboard_page_right_top>div {
   display: flex;
   gap: 20px;
 }
@@ -231,7 +235,7 @@
   font-weight: 700;
 }
 
-.logout_div > img {
+.logout_div>img {
   scale: 0.7;
   margin-right: 8px;
 }
@@ -266,7 +270,7 @@
   border-radius: 0 0 10px 10px;
 }
 
-.subscribed_card_top > div {
+.subscribed_card_top>div {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
@@ -314,7 +318,7 @@
   border: 1px solid #56548c;
 }
 
-.unsubscribed_apps_crad > div {
+.unsubscribed_apps_crad>div {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
@@ -338,6 +342,7 @@
   .close_nav_icon {
     display: none;
   }
+
   .unsubscribed_apps_crad h2 {
     font-size: 22px;
   }
@@ -423,6 +428,12 @@
   .unsubscribed_apps_crad {
     width: 100vw;
   }
+  .dashboard_page_right_top {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dashboard_page_right_top input{
+    margin: 20px 30px!important;
+  }
 }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 375px) {
@@ -443,5 +454,9 @@
 
   .unsubscribed_apps_crad {
     width: 100vw;
+  }
+
+  .dashboard_page_right_top {
+    grid-template-columns: 1fr 1fr;
   }
 }
