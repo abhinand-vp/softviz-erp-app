@@ -74,7 +74,15 @@
   scale: 0.7;
   cursor: pointer;
 }
-
+.close_nav_icon{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.close_nav_icon>img{
+  scale: 0.5;
+  cursor: pointer;
+}
 .nav_icon h3 {
   font-size: 28px;
 }

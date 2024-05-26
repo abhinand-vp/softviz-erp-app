@@ -42,7 +42,9 @@ function Dashboard_Left({ isNavOpen, handleNavClose }) {
           isNavOpen ? "dashboard_page_left show" : "dashboard_page_left hide"
         }
       >
-        <button className="close_nav_icon" onClick={handleNavClose}>close</button>
+        <div className="close_nav_icon" onClick={handleNavClose}>
+          <img src="/icons/close_icon.svg" alt="closeIcon" />
+        </div>
         <div className="dashboard_page_left_profile">
           <div className="avatar_circle">
             <img src="/image/avatar-41.png" alt="avatar" />
