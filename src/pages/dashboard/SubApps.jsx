@@ -27,7 +27,7 @@ function SubApps() {
           // eslint-disable-next-line react/jsx-key
           <div className="unsubscribed_apps_crad" onClick={navigateToDetailsPage}>
             <div>
-              <img src="/public/icons/down-arrow.svg" alt="" />
+              <img src="/icons/down-arrow.svg" alt="" />
               <h2 key={item?.id}>{item?.heading}</h2>
             </div>
             <p>Optimize growth effortlessly with personalized HWR software streamlining operations.</p>

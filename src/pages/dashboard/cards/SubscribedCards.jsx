@@ -9,7 +9,7 @@ const SubscribedCards = () => {
         <div className='subscribed_card' onClick={navigateToDetailsPage}>
             <div className='subscribed_card_top'>
                 <div>
-                    <img src="/public/image/azutine 1.png" alt="" />
+                    <img src="/image/azutine 1.png" alt="" />
                     <h1>ERP</h1>
                 </div>
                 <p>Subscribed</p>

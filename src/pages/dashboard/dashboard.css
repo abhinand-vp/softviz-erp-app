@@ -63,9 +63,9 @@
   color: #56548c;
   border: none;
 }
-.dashboard_page_left_profile button:hover{
-  background-color: #56548C;
-  color: #FFFFFF;
+.dashboard_page_left_profile button:hover {
+  background-color: #56548c;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -110,7 +110,7 @@
 }
 .search_icon {
   padding-left: 25px;
-  background: url("/public/icons/search.svg") no-repeat left;
+  background: url("/icons/search.svg") no-repeat left;
   background-size: 20px;
 }
 
@@ -177,19 +177,19 @@
   align-items: center;
 }
 
-.nav_item_li_div>img {
+.nav_item_li_div > img {
   scale: 0.7;
   margin-right: 8px;
 }
 
-.dashboard_dropdown_ul>li {
+.dashboard_dropdown_ul > li {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   padding: 5px 0 5px 60px;
 }
 
-.dashboard_dropdown_ul>li:hover {
+.dashboard_dropdown_ul > li:hover {
   color: #56548c;
 }
 
@@ -204,7 +204,7 @@
   padding: 25px 35px 15px 0;
 }
 
-.dashboard_page_right_top>div {
+.dashboard_page_right_top > div {
   display: flex;
   gap: 20px;
 }
@@ -231,7 +231,7 @@
   font-weight: 700;
 }
 
-.logout_div>img {
+.logout_div > img {
   scale: 0.7;
   margin-right: 8px;
 }
@@ -253,20 +253,20 @@
 }
 
 .subscribed_card_top {
-  background-color: #56548C;
+  background-color: #56548c;
   width: 230px;
   height: 150px;
   border-radius: 10px 10px 0 0;
 }
 
 .subscribed_card_bottom {
-  background-color: #CACFFC66;
+  background-color: #37408d99;
   width: 230px;
   height: 35px;
   border-radius: 0 0 10px 10px;
 }
 
-.subscribed_card_top>div {
+.subscribed_card_top > div {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
@@ -274,19 +274,19 @@
 }
 
 .subscribed_card_top h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 35px;
 }
 
 .subscribed_card_top p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   padding: 25px 20px;
   font-weight: 200;
 }
 
 .subscribed_card_bottom {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 200;
   text-align: center;
   padding: 4px 0;
@@ -300,7 +300,7 @@
 .unsubscribed_apps_crad {
   width: 20vw;
   height: 220px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border-radius: 15px;
   padding: 20px 30px;
   margin: 30px 0;
@@ -314,7 +314,7 @@
   border: 1px solid #56548c;
 }
 
-.unsubscribed_apps_crad>div {
+.unsubscribed_apps_crad > div {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
@@ -326,8 +326,8 @@
 }
 
 .unsubscribed_apps_crad h2 {
-  font-size: 32px;
-  color: #32383F;
+  font-size: 30px;
+  color: #32383f;
 }
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1450px) {
@@ -337,6 +337,9 @@
 
   .close_nav_icon {
     display: none;
+  }
+  .unsubscribed_apps_crad h2 {
+    font-size: 22px;
   }
 }
 
