@@ -9,7 +9,7 @@ function Dashboard_Top({ toogleNav }) {
           <img src="/icons/nav_icon.svg" alt="" />
           <h3>Dashboard</h3>
         </div>
-        <div>
+        <div className="dashboard_top_icons">
           <img src="/icons/halfmoon_icon.svg" alt="" />
           <img src="/icons/language_icon.svg" alt="" />
           <img src="/icons/cart_icon.svg" alt="" />

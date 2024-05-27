@@ -20,15 +20,15 @@ const Country = () => {
           <td>1</td>
           <td>India</td>
           <td>IND</td>
-          <td><img src="/public/icons/Create.svg" onClick={() => setEdit(!edit)} alt="" /></td>
-          <td><img src="/public/icons/Eye.svg" alt="" /></td>
+          <td><img src="/icons/Create.svg" onClick={() => setEdit(!edit)} alt="" /></td>
+          <td><img src="/icons/Eye.svg" alt="" /></td>
         </tr>
         <tr>
           <td>1</td>
           <td>India</td>
           <td>IND</td>
-          <td><img src="/public/icons/Create.svg" alt="" /></td>
-          <td><img src="/public/icons/Eye.svg" alt="" /></td>
+          <td><img src="/icons/Create.svg" alt="" /></td>
+          <td><img src="/icons/Eye.svg" alt="" /></td>
         </tr>
       </table>
     </div>

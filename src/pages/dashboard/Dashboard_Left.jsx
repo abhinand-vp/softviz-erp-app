@@ -218,7 +218,15 @@ function Dashboard_Left({ isNavOpen, handleNavClose }) {
               }
               onClick={() => handleNavItemClick("User Settings")}
             >
-              <div className="nav_item_li_div">
+              <div
+                className="nav_item_li_div"
+                onClick={() =>
+                  handleDropdownItemClick(
+                    "User Settings",
+                    "/dashboard/usersettings"
+                  )
+                }
+              >
                 <img src="/icons/settings_icon.svg" alt="settings_icon" />
                 User Settings
               </div>
