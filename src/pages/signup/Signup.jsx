@@ -78,15 +78,15 @@ const Signup = () => {
         resolver: yupResolver(recovery_emial_schema),
     });
 
-    const onSubmit = (data) => {
+    const onSubmitLogin = (data) => {
         reset();
         alert(JSON.stringify(data));
         navigate("/dashboard");
     };
-    const onSubmit1 = (data) => {
+    const onSubmitNewuser = (data) => {
         alert(JSON.stringify(data));
     };
-    const onSubmit2 = (data) => {
+    const onSubmitForgetPassowrd = (data) => {
         alert(JSON.stringify(data));
     };
 
@@ -149,13 +149,12 @@ const Signup = () => {
                   <img src="/image/ic_fb logo.png" alt="" />
                 </div>
               </div>
-              {/* <hr className="or_hr_line" /> */}
               <div className="or_hr">
                             <hr className="or_hr_line" />
                             <p>or</p>
                             <hr className="or_hr_line" />
                         </div>
-              <form key={1} onSubmit={handleSubmit(onSubmit)}>
+              <form key={1} onSubmit={handleSubmit(onSubmitLogin)}>
                 <div className="signup_inputboxes">
                   <TextField
                     {...register("email", { required: true })}
@@ -197,7 +196,7 @@ const Signup = () => {
                 <span onClick={() => setforms(1)}>sign in</span>
               </p>
               <div>
-                <form key={2} onSubmit={handleSubmit1(onSubmit1)}>
+                <form key={2} onSubmit={handleSubmit1(onSubmitNewuser)}>
                   <div className="signup_2_fields_line">
                     <div>
                       <TextField
@@ -333,7 +332,7 @@ const Signup = () => {
                 No worriest! Just enter your email and we’ll send you a reset{" "}
                  password link.
               </p>
-              <form key={3} onSubmit={handleSubmit2(onSubmit2)}>
+              <form key={3} onSubmit={handleSubmit2(onSubmitForgetPassowrd)}>
                 <TextField
                   {...register2("email", { required: true })}
                   label="Recovery Email"

@@ -335,20 +335,22 @@
 }
 
 .country_table {
-  background-color: #DDDFE1;
-  width: 90%;
+  background-color: #f4f4f4;
+  width: 95%;
   height: 500px;
-  padding: 15px;
+  padding: 10px 15px;
+  position: relative;
 
 }
 
 .country_table h3 {
   font-size: 20px;
   font-weight: 200;
+  margin: 10px 0;
 }
 
 .heading_border {
-  border: 1px solid gray;
+  border: 1px solid #e2e4e5;
 }
 
 table {
@@ -362,11 +364,40 @@ tr:hover {
 table {
   border-collapse: collapse;
   width: 100%;
+  color: #5c5f67;
 }
 
 th,
 td {
   padding: 10px;
+}
+
+.country_add_buttons{
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+.country_add_buttons button {
+  background-color: #56548C;
+  padding: 8px 18px;
+  margin: 0 10px;
+  border-radius: 5px;
+  width: 90px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.country_add_buttons_edit {
+  background-color: transparent !important;
+  border: .75px solid gray;
+  color: black !important;
+}
+.signup_inputboxes_inputdivs{
+  display: flex;
+  justify-content: flex-start;
+  gap: 18vw;
+}
+.signup_inputboxes_inputdiv{
+  display: block;
 }
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1450px) {
