@@ -173,7 +173,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                 <td>AMaerica</td>
                 <td>USA</td>
                 <td>
-                  <img src="/icons/Create.svg" alt="" />
+                  <img src="/icons/Create.svg" alt="" onClick={onOpen} />
                 </td>
                 <td>
                   <img src="/icons/Eye.svg" alt="" />
@@ -184,7 +184,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                 <td>India</td>
                 <td>IND</td>
                 <td>
-                  <img src="/icons/Create.svg" alt="" />
+                  <img src="/icons/Create.svg" alt="" onClick={onOpen} />
                 </td>
                 <td>
                   <img src="/icons/Eye.svg" alt="" />
