@@ -97,7 +97,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                             {...register("Country", { required: true })}
                             type="text"
                             variant="outline"
-                            width="180%"
+                            // width="100%"
                             placeholder="Enter your country "
                           />
                           <p className="error_message">
@@ -110,7 +110,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                             {...register("CountryCode", { required: true })}
                             variant="outline"
                             type="text"
-                            width="180%"
+                            // width="100%"
                             placeholder="Enter your country code"
                           />
                           <p className="error_message">
@@ -121,15 +121,12 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                       <div className="signup_inputboxes_inputdiv">
                         <p>Description</p>
                         <Input
-                          {...register("CountryCode", { required: true })}
+                          {...register("Countrydesc", { required: true })}
                           variant="outline"
                           type="text"
-                          width="100%"
+                          // width="100%"
                           placeholder="Description (Maximum character 200)"
                         />
-                        <p className="error_message">
-                          {errors.CountryCode?.message}
-                        </p>
                       </div>
                       <div className="country_add_buttons">
                         <button className="country_add_buttons_edit">
@@ -154,7 +151,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
             <h3>Country Details</h3>
             <table>
               <tr className="heading_border">
-                <th>sL.No</th>
+                <th>Sl.No</th>
                 <th>Country</th>
                 <th>Code</th>
                 <th>Edit</th>
