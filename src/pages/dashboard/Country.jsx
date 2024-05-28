@@ -11,7 +11,6 @@ import {
   TabIndicator,
   Select,
 } from "@chakra-ui/react";
-// import { TextField } from '@mui/material';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -28,9 +27,10 @@ import {
   FormControl,
   FormLabel,
 } from "@chakra-ui/react";
+
 const Country = () => {
   const [addorList, setAddorList] = useState(true);
-const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const schema = yup.object().shape({
     Country: yup.string().required("Country Name Required"),
     CountryCode: yup.string().required("Country code Required"),
@@ -97,7 +97,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                             {...register("Country", { required: true })}
                             type="text"
                             variant="outline"
-                            // width="100%"
+
                             placeholder="Enter your country "
                           />
                           <p className="error_message">
@@ -110,7 +110,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                             {...register("CountryCode", { required: true })}
                             variant="outline"
                             type="text"
-                            // width="100%"
+
                             placeholder="Enter your country code"
                           />
                           <p className="error_message">
@@ -124,7 +124,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                           {...register("Countrydesc", { required: true })}
                           variant="outline"
                           type="text"
-                          // width="100%"
+
                           placeholder="Description (Maximum character 200)"
                         />
                       </div>
@@ -138,10 +138,104 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                   </div>
                 </TabPanel>
                 <TabPanel>
-                  <p>two!</p>
+                  <div className="signup_inputboxes">
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                      <div className="signup_inputboxes_inputdivs">
+                        <div className="signup_inputboxes_inputdiv">
+                          <p>देश*</p>
+                          <Input
+                            {...register("Country", { required: true })}
+                            type="text"
+                            variant="outline"
+
+                            placeholder="अपना देश दर्ज करें"
+                          />
+                          <p className="error_message">
+                            {errors.Country?.message}
+                          </p>
+                        </div>
+                        <div className="signup_inputboxes_inputdiv">
+                          <p>कंट्री कोड*</p>
+                          <Input
+                            {...register("CountryCode", { required: true })}
+                            variant="outline"
+                            type="text"
+
+                            placeholder="अपना देश कोड दर्ज करें"
+                          />
+                          <p className="error_message">
+                            {errors.CountryCode?.message}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="signup_inputboxes_inputdiv">
+                        <p>विवरण</p>
+                        <Input
+                          {...register("Countrydesc", { required: true })}
+                          variant="outline"
+                          type="text"
+
+                          placeholder="विवरण (अधिकतम वर्ण 200)"
+                        />
+                      </div>
+                      <div className="country_add_buttons">
+                        <button className="country_add_buttons_edit">
+                          Edit
+                        </button>
+                        <button type="submit">Save</button>
+                      </div>
+                    </form>
+                  </div>
                 </TabPanel>
                 <TabPanel>
-                  <p>three!</p>
+                  <div className="signup_inputboxes">
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                      <div className="signup_inputboxes_inputdivs">
+                        <div className="signup_inputboxes_inputdiv">
+                          <p>دولة*</p>
+                          <Input
+                            {...register("Country", { required: true })}
+                            type="text"
+                            variant="outline"
+
+                            placeholder="أدخل بلدك"
+                          />
+                          <p className="error_message">
+                            {errors.Country?.message}
+                          </p>
+                        </div>
+                        <div className="signup_inputboxes_inputdiv">
+                          <p>الرقم الدولي*</p>
+                          <Input
+                            {...register("CountryCode", { required: true })}
+                            variant="outline"
+                            type="text"
+
+                            placeholder="أدخل رمز بلدك"
+                          />
+                          <p className="error_message">
+                            {errors.CountryCode?.message}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="signup_inputboxes_inputdiv">
+                        <p>وصف</p>
+                        <Input
+                          {...register("Countrydesc", { required: true })}
+                          variant="outline"
+                          type="text"
+
+                          placeholder="الوصف (الحد الأقصى 200 حرف)"
+                        />
+                      </div>
+                      <div className="country_add_buttons">
+                        <button className="country_add_buttons_edit">
+                          Edit
+                        </button>
+                        <button type="submit">Save</button>
+                      </div>
+                    </form>
+                  </div>
                 </TabPanel>
               </TabPanels>
             </Tabs>
